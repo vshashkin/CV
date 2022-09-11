@@ -176,7 +176,7 @@ h3 {
     font-size: 30px;
     text-decoration: none;
     border-radius: 3px;
-    text-align: right;
+    margin-left: 1850px;
 }
 
 .download__btn:hover {
