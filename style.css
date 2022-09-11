@@ -121,6 +121,32 @@ h3 {
     color: blueviolet;
 }
 
+.hero__btn__ml {
+    margin-right: 10px;
+
+    font-size: 28px;
+    color: #000;
+
+    transition: color 0.3s;
+}
+
+.hero__btn__ml:hover {
+    color: blueviolet;
+}
+
+.hero__btn__wu {
+    margin-right: 10px;
+
+    font-size: 28px;
+    color: #000;
+
+    transition: color 0.3s;
+}
+
+.hero__btn__wu:hover {
+    color: blueviolet;
+}
+
 .hero__box {
     max-width: 700px;
     justify-self: center;
@@ -150,7 +176,7 @@ h3 {
     font-size: 30px;
     text-decoration: none;
     border-radius: 3px;
-    justify-content: center;
+    text-align: right;
 }
 
 .download__btn:hover {
