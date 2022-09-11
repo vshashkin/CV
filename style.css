@@ -183,6 +183,11 @@ h3 {
     color: blueviolet;
 }
 
+.footer {
+    margin-left: 20px;
+    color: grey;
+}
+
 @media screen and (max-width: 970px)  {
     
     .hero {
