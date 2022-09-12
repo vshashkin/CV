@@ -34,7 +34,73 @@ h3 {
 .header__logo {
     color: inherit;
     text-decoration: none;
+}
 
+.navigation__menu {
+    display: flex;
+    margin-left: 20px;
+}
+
+.home {
+    margin-right: 10px;
+
+    font-size: 30px;
+    color: #000;
+
+    transition: color 0.3s;
+}
+
+.home:hover {
+    color: blueviolet;
+}
+
+.about {
+    margin-right: 10px;
+
+    font-size: 30px;
+    color: #000;
+
+    transition: color 0.3s;
+}
+
+.about:hover {
+    color: blueviolet;
+}
+
+.skills {
+    margin-right: 10px;
+
+    font-size: 30px;
+    color: #000;
+
+    transition: color 0.3s;
+}
+
+.skills:hover {
+    color: blueviolet;
+}
+
+.work {
+    margin-right: 10px;
+
+    font-size: 30px;
+    color: #000;
+
+    transition: color 0.3s;
+}
+
+.work:hover {
+    color: blueviolet;
+}
+
+.download__btn {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+}
+
+.download__btn:hover {
+    color: blueviolet;
 }
 
 .hero {
@@ -167,20 +233,6 @@ h3 {
 
 .hero__description {
     margin-left: 20px;
-}
-
-.download__btn {
-    background-color: white;
-    color: black;
-    padding: 0.3rem 0.3rem;
-    font-size: 30px;
-    text-decoration: none;
-    border-radius: 3px;
-    margin-left: 1850px;
-}
-
-.download__btn:hover {
-    color: blueviolet;
 }
 
 .footer {
