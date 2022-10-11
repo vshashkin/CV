@@ -43,7 +43,7 @@ h3 {
 
 .home {
     margin-right: 10px;
-
+    margin-left: 10px;
     font-size: 30px;
     color: #000;
 
@@ -239,6 +239,19 @@ h3 {
     margin-left: 20px;
     color: grey;
 }
+
+.About__title {
+    display: flex;
+    margin-left: 35px;
+    
+}
+
+.Skills__title {
+    display: flex;
+    margin-left: 35px;
+    
+}
+
 
 @media screen and (max-width: 970px)  {
     
