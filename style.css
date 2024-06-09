@@ -37,8 +37,13 @@ h3 {
 }
 
 .navigation__menu {
+    position: fixed;
     display: flex;
-    margin-left: 230px;
+    margin-left: 520px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    width: 50%;
 }
 
 .home {
@@ -87,7 +92,6 @@ h3 {
 }
 
 .download__btn {
-    background-color: white;
     color: black;
     font-size: 30px;
 }
@@ -101,7 +105,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 520px;
 }
 
 .container {
@@ -232,26 +236,32 @@ h3 {
     text-align: center;
 }
 
+.footer__logo {
+    margin-left: 20px;
+    color: grey;
+    text-align: center;
+}
+
 .About__title {
     display: flex;
-    margin-left: 220px;
+    margin-left: 980px;
     
 }
 .About__description {
-    margin-left: 220px;
-    margin-right: 1000px;
+    margin-top: 3;
+    margin-left: 520px;
+    margin-right: 550px;
     font-size: large;
 }
 
 .Skills__title {
     display: flex;
-    margin-left: 220px;
-    margin-left: 220px;
+    margin-left: 980px;
     
 }
 .Experience__title {
     display: flex;
-    margin-left: 220px;
+    margin-left: 930px;
     
 }
 
@@ -338,4 +348,179 @@ IMG.card-img-top {
     to {
         backdrop-filter: hue-rotate(90deg);
     }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px 40px;
+    background: #e8e2e281;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #6b6a6e;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-event {
+    padding: 10px 40px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+}
+
+.timeline-event:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-event:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-event::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #6b6a6e;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-event:nth-child(even)::after {
+    left: -16px;
+}
+
+.timeline-date {
+    padding: 5px 10px;
+    background: #824ff9;
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: -100px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.timeline-event:nth-child(even) .timeline-date {
+    left: auto;
+    right: -100px;
+    text-align: left;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background: rgb(210, 206, 206);
+    position: relative;
+    border-radius: 6px;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.timeline-content p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+/* облачко наверху */
+
+.container_cloud {
+    text-align: center;
+}
+
+.cloud-heading {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 2.5em;
+    color: #333;
+    background-color: #fff;
+    border: 5px solid #ccc;
+    border-radius: 50px; /* Makes the corners rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    position: relative;
+    margin-top: 5px;
+}
+
+.cloud-heading::before,
+.cloud-heading::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    border: 5px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.cloud-heading::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 10%;
+}
+
+.cloud-heading::after {
+    width: 50px;
+    height: 50px;
+    bottom: -25px;
+    right: 10%;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+.review {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-photo {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
 }
